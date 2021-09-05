@@ -6,13 +6,22 @@ export default function App() {
   const name = "Chano";
 
   return (
+    // if
+    // <View style={styles.container}>
+    //   <Text style={styles.text}>
+    //     {(() => {
+    //       if (name === "Hanbit") return "My name is Hanbit";
+    //       else if (name === "Chano") return "My name is Chano";
+    //       else return "My name is React Native";
+    //     })()}
+    //   </Text>
+    //   <StatusBar style="auto" />
+    // </View>
+
+    // 삼항 연산자
     <View style={styles.container}>
       <Text style={styles.text}>
-        {(() => {
-          if (name === "Hanbit") return "My name is Hanbit";
-          else if (name === "Chano") return "My name is Chano";
-          else return "My name is React Native";
-        })()}
+        My name is {name === "Chano" ? "Chano Park" : "React Native"}
       </Text>
       <StatusBar style="auto" />
     </View>
