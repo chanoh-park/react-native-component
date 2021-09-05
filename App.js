@@ -3,7 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
-  const name = "Chano";
+  const name = "Test";
 
   return (
     // if
@@ -19,10 +19,19 @@ export default function App() {
     // </View>
 
     // 삼항 연산자
+    // <View style={styles.container}>
+    //   <Text style={styles.text}>
+    //     My name is {name === "Chano" ? "Chano Park" : "React Native"}
+    //   </Text>
+    //   <StatusBar style="auto" />
+    // </View>
+
+    // AND 연산자와 OR 연산자
     <View style={styles.container}>
-      <Text style={styles.text}>
-        My name is {name === "Chano" ? "Chano Park" : "React Native"}
-      </Text>
+      {name === "Chano" && <Text style={styles.text}>My name is Chano</Text>}
+      {name !== "Chano" && (
+        <Text style={styles.text}>My name is not Chano</Text>
+      )}
       <StatusBar style="auto" />
     </View>
   );
