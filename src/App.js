@@ -1,16 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
+import Counter from "./components/Counter";
+import EventButton from "./components/EventButton";
+import EventInput from "./components/EventInput";
 import MyButton from "./components/MyButton";
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Props</Text>
+      {/* <Text style={styles.text}>Props</Text>
       <MyButton title="Button" onPress={() => alert("props")} />
       <MyButton title="Button" onPress={() => alert("children")}>
         Children Props
       </MyButton>
-      <MyButton title="Button" onPress={() => alert("default")} />
+      <MyButton title="Button" onPress={() => alert("default")} /> */}
+      {/* <Counter /> */}
+      <EventButton />
+      <EventInput />
     </View>
   );
 };
